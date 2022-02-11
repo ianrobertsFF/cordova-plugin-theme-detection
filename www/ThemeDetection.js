@@ -2,7 +2,7 @@ var exec = require("cordova/exec");
 
 var CLASS = "ThemeDetection";
 
-exports.isAvailable = function (success, error) {
+exports.isAvailable = function () {
     return new Promise((resolve, reject) => {
         exec((success)=>{
             resolve(success);
@@ -13,7 +13,7 @@ exports.isAvailable = function (success, error) {
     });
 }
 
-exports.isDarkModeEnabled = function (success, error) {
+exports.isDarkModeEnabled = function () {
     return new Promise((resolve, reject) => {
         exec((success)=>{
             resolve(success);
